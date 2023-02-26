@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  	<script src="/siofu/client.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+  <title>Kjær og Richter</title>
+</head>
+<body>
+  <nav>
+    <ul class="ulNav">
+      <li class="nav"><a class="navA" href="">OVERVIEW</a></li>
+      <li class="nav"><a class="active" href="">PROJECTS</a></li>
+      <li class="nav"><a class="navA" href="">MEMBERS</a></li>
+      <li class="nav"><a class="navA" href="">SEARCH</a></li>
+    </ul>
+  </nav>
+  <div class="chat-sidebar">
+    <h3> MY PROJECTS</h3>
+    <div>
+      <button class="btnLeft" onclick="toggleSager()">
+        100 - SAGER
+      </button>
+      <div class="sager" id="sager">
+        <ul class="ulSager">
+          <li><a class="urlLink" href="">10920 - Lindbjerg Skolen</a></li>
+          <li><a class="urlLink" href="">10250 - Gasværket, Aarhus Ø</a></li>
+          <li><a class="urlLink" href="">19030 - Vikingemuseet Risskov</a></li>
+          <li><a class="urlLink" href="">11720 - Nyborg Skolen</a></li>
+          <li><a class="urlLink" href="">13300 - Grundstens Huset</a></li>
+          <li><a class="urlLink" href="">16940 - Ry-hus</a></li>
+        </ul>
+      </div>
+      <button class="btnLeft" onclick="">
+        200 - SAGER
+      </button>
+      <button class="btnLeft" onclick="">
+        300 - SAGER
+      </button>
+      <button class="btnLeft" onclick="">
+        400 - SAGER
+      </button>
+      <button class="btnLeft" onclick="">
+        500 - SAGER
+      </button>
+    </div>
+    <h3> ALL PROJETCS</h3>
+    <h3> NOTIFICATIONS</h3>
+    <h3> CALENDAR</h3>
+    <h3 id="peopleProject"> People part of the project</h3>
+    <ul id="users"></ul>
+  </div>
+  <div class="currentProject">
+    <h7 id="room-name"></h7>
+  </div>
+  <div class="chat-container">
+    <main class="chat-main">
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+      <div class='divUpload'>
+        <p id="choose_file"><label>Choose File: <input type="file" id="upload_input" style="display:none;"/>
+          <p id='selectFileInfo'></p>
+    </div>
+    <div class="myDiv"></div>
+    </div>
+    <div class="chat-messages"></div>
+  </div> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/5.1.0/qs.min.js" 
+  integrity="sha512-rjHuJkWaHSdq796S1Ov1tnGgXeQkEFTsrPW0VOjYUHU1b3Ey489/9n3FUSC0vfeaxTWjOVS8VLe1fLZ2kblcBg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- library used to collect the query for different projects-->
+  <script src="js/main.js"></script>
+</body>
+</html>

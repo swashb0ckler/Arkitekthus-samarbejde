@@ -1,0 +1,26 @@
+{
+  "name": "gitownproject",
+  "version": "1.0.0",
+  "description": "architect app ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.au.dk/au590421/gitownproject.git"
+  },
+  "author": "Fred",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "moment-timezone": "^0.5.34",
+    "socket.io": "^4.5.0",
+    "socketio-file-upload": "^0.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
