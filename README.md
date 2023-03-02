@@ -1,6 +1,6 @@
 # Arkitekthus-samarbejde
 
-####Projekt fra universitetet
+#### Projekt fra universitetet
 I dette projekt samarbejdede vi med en tegnestue i Aarhus, hvor målet var at digitalisere deres måde at dele dokumenter med hinanden på. Hertil blev målet at lave 'version kontrol for arkitekter', så dokumenter nemt kunne videreleveres som *git beskeder* og der kunne bibeholdes en kontekst for hvorfor en sketch eller et dokument var blevet lavet.  
 
 
